@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CologneDBModelStoreContainer" CdmEntityContainer="CologneDBEntities1">
+    <EntitySetMapping Name="tblSabteFaktoreJadid">
+      <EntityTypeMapping TypeName="CologneDBModel.tblSabteFaktoreJadid">
+        <MappingFragment StoreEntitySet="tblSabteFaktoreJadid">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TarikhKharid" ColumnName="TarikhKharid" />
+          <ScalarProperty Name="ShomareFaktor" ColumnName="ShomareFaktor" />
+          <ScalarProperty Name="RaveshKharid" ColumnName="RaveshKharid" />
+          <ScalarProperty Name="TarikhTasviye" ColumnName="TarikhTasviye" />
+          <ScalarProperty Name="MablagheKoleFaktor" ColumnName="MablagheKoleFaktor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSabteSefaresh">
+      <EntityTypeMapping TypeName="CologneDBModel.tblSabteSefaresh">
+        <MappingFragment StoreEntitySet="tblSabteSefaresh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameMahsol2" ColumnName="NameMahsol2" />
+          <ScalarProperty Name="Hajm" ColumnName="Hajm" />
+          <ScalarProperty Name="GheymateForosh" ColumnName="GheymateForosh" />
+          <ScalarProperty Name="TarikhSabteSefaresh" ColumnName="TarikhSabteSefaresh" />
+          <ScalarProperty Name="NameKharidar" ColumnName="NameKharidar" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="AddressErsali" ColumnName="AddressErsali" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVorodeMahsol">
+      <EntityTypeMapping TypeName="CologneDBModel.tblVorodeMahsol">
+        <MappingFragment StoreEntitySet="tblVorodeMahsol">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameMahsol" ColumnName="NameMahsol" />
+          <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+          <ScalarProperty Name="Hajm" ColumnName="Hajm" />
+          <ScalarProperty Name="TarikhVorod" ColumnName="TarikhVorod" />
+          <ScalarProperty Name="GheymateKharid" ColumnName="GheymateKharid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DeleteTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.DeleteTblSabteFaktoreJadid" />
+    <FunctionImportMapping FunctionImportName="DeleteTblSabteSefaresh" FunctionName="CologneDBModel.Store.DeleteTblSabteSefaresh" />
+    <FunctionImportMapping FunctionImportName="DeletetblVorodeMahsol" FunctionName="CologneDBModel.Store.DeletetblVorodeMahsol" />
+    <FunctionImportMapping FunctionImportName="InsertTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.InsertTblSabteFaktoreJadid" />
+    <FunctionImportMapping FunctionImportName="InsertTblSabteSefaresh" FunctionName="CologneDBModel.Store.InsertTblSabteSefaresh" />
+    <FunctionImportMapping FunctionImportName="InsertTblVorodeMahsol" FunctionName="CologneDBModel.Store.InsertTblVorodeMahsol" />
+    <FunctionImportMapping FunctionImportName="ResetIdTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.ResetIdTblSabteFaktoreJadid" />
+    <FunctionImportMapping FunctionImportName="ResetIdTblSabteSefaresh" FunctionName="CologneDBModel.Store.ResetIdTblSabteSefaresh" />
+    <FunctionImportMapping FunctionImportName="ResetIdTblVorodeMahsol" FunctionName="CologneDBModel.Store.ResetIdTblVorodeMahsol" />
+    <FunctionImportMapping FunctionImportName="UpdateTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.UpdateTblSabteFaktoreJadid" />
+    <FunctionImportMapping FunctionImportName="UpdateTblSabteSefaresh" FunctionName="CologneDBModel.Store.UpdateTblSabteSefaresh" />
+    <FunctionImportMapping FunctionImportName="UpdateTblVorodeMahsol" FunctionName="CologneDBModel.Store.UpdateTblVorodeMahsol" />
+  </EntityContainerMapping>
+</Mapping>

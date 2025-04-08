@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CologneDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblSabteFaktoreJadid">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TarikhKharid" Type="date" Nullable="false" />
+    <Property Name="ShomareFaktor" Type="int" Nullable="false" />
+    <Property Name="RaveshKharid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TarikhTasviye" Type="date" Nullable="false" />
+    <Property Name="MablagheKoleFaktor" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSabteSefaresh">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameMahsol2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Hajm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GheymateForosh" Type="bigint" Nullable="false" />
+    <Property Name="TarikhSabteSefaresh" Type="date" Nullable="false" />
+    <Property Name="NameKharidar" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tel" Type="bigint" Nullable="false" />
+    <Property Name="AddressErsali" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblVorodeMahsol">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameMahsol" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tedad" Type="int" Nullable="false" />
+    <Property Name="Hajm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TarikhVorod" Type="date" Nullable="false" />
+    <Property Name="GheymateKharid" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="DeleteTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeletetblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="InsertTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TarikhKharid" Type="date" Mode="In" />
+    <Parameter Name="ShomareFaktor" Type="int" Mode="In" />
+    <Parameter Name="RaveshKharid" Type="nvarchar" Mode="In" />
+    <Parameter Name="TarikhTasviye" Type="date" Mode="In" />
+    <Parameter Name="MablagheKoleFaktor" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="InsertTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameMahsol2" Type="nvarchar" Mode="In" />
+    <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+    <Parameter Name="GheymateForosh" Type="bigint" Mode="In" />
+    <Parameter Name="TarikhSabteSefaresh" Type="date" Mode="In" />
+    <Parameter Name="NameKharidar" Type="nvarchar" Mode="In" />
+    <Parameter Name="Tel" Type="bigint" Mode="In" />
+    <Parameter Name="AddressErsali" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="InsertTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameMahsol" Type="nvarchar" Mode="In" />
+    <Parameter Name="Tedad" Type="int" Mode="In" />
+    <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+    <Parameter Name="TarikhVorod" Type="date" Mode="In" />
+    <Parameter Name="GheymateKharid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ResetIdTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ResetIdTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ResetIdTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UpdateTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="TarikhKharid" Type="date" Mode="In" />
+    <Parameter Name="ShomareFaktor" Type="int" Mode="In" />
+    <Parameter Name="RaveshKharid" Type="nvarchar" Mode="In" />
+    <Parameter Name="TarikhTasviye" Type="date" Mode="In" />
+    <Parameter Name="MablagheKoleFaktor" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="UpdateTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="NameMahsol2" Type="nvarchar" Mode="In" />
+    <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+    <Parameter Name="GheymateForosh" Type="bigint" Mode="In" />
+    <Parameter Name="TarikhSabteSefaresh" Type="date" Mode="In" />
+    <Parameter Name="NameKharidar" Type="nvarchar" Mode="In" />
+    <Parameter Name="Tel" Type="bigint" Mode="In" />
+    <Parameter Name="AddressErsali" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="UpdateTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="NameMahsol" Type="nvarchar" Mode="In" />
+    <Parameter Name="Tedad" Type="int" Mode="In" />
+    <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+    <Parameter Name="TarikhVorod" Type="date" Mode="In" />
+    <Parameter Name="GheymateKharid" Type="money" Mode="In" />
+  </Function>
+  <EntityContainer Name="CologneDBModelStoreContainer">
+    <EntitySet Name="tblSabteFaktoreJadid" EntityType="Self.tblSabteFaktoreJadid" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSabteSefaresh" EntityType="Self.tblSabteSefaresh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblVorodeMahsol" EntityType="Self.tblVorodeMahsol" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

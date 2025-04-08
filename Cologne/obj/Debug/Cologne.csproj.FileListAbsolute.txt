@@ -1,0 +1,46 @@
+D:\Project Library\Cologne\Cologne\bin\Debug\Cologne.exe.config
+D:\Project Library\Cologne\Cologne\bin\Debug\Cologne.exe
+D:\Project Library\Cologne\Cologne\bin\Debug\Cologne.pdb
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.csprojResolveAssemblyReference.cache
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.Form1.resources
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.Properties.Resources.resources
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.csproj.GenerateResource.Cache
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.exe
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.pdb
+D:\Project Library\Cologne\Cologne\obj\Debug\Cologne.frmVorodMahsol.resources
+D:\برنامه ها\Cologne\Cologne\bin\Debug\Cologne.exe.config
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.exe
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.pdb
+D:\برنامه ها\Cologne\Cologne\bin\Debug\Cologne.exe
+D:\برنامه ها\Cologne\Cologne\bin\Debug\Cologne.pdb
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.csprojResolveAssemblyReference.cache
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.Form1.resources
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.Properties.Resources.resources
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.csproj.GenerateResource.Cache
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.frmVorodeMahsol.resources
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.frmSabteFaktoreJadid.resources
+D:\برنامه ها\Cologne\Cologne\obj\Debug\Cologne.frmSabteSefaresh.resources
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Cologne.exe.config
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Cologne.exe
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Cologne.pdb
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.csproj.AssemblyReference.cache
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.Form1.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmSabteFaktoreJadid.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmSabteSefaresh.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmVorodeMahsol.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.Properties.Resources.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.csproj.GenerateResource.cache
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.csproj.CoreCompileInputs.cache
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.exe
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.pdb
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmSoratVaziat.resources
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmAbout.resources
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Aliencube.EntityContextLibrary.dll
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\EntityFramework.dll
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\EntityFramework.SqlServer.dll
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Aliencube.EntityContextLibrary.pdb
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\Aliencube.EntityContextLibrary.xml
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\EntityFramework.xml
+D:\برنامه ها\File Asli Cologne\Cologne\bin\Debug\EntityFramework.SqlServer.xml
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.csproj.Up2Date
+D:\برنامه ها\File Asli Cologne\Cologne\obj\Debug\Cologne.frmPoshtibani.resources

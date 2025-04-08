@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CologneDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblSabteFaktoreJadid">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TarikhKharid" Type="date" Nullable="false" />
+          <Property Name="ShomareFaktor" Type="int" Nullable="false" />
+          <Property Name="RaveshKharid" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TarikhTasviye" Type="date" Nullable="false" />
+          <Property Name="MablagheKoleFaktor" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblSabteSefaresh">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameMahsol2" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Hajm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GheymateForosh" Type="bigint" Nullable="false" />
+          <Property Name="TarikhSabteSefaresh" Type="date" Nullable="false" />
+          <Property Name="NameKharidar" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Tel" Type="bigint" Nullable="false" />
+          <Property Name="AddressErsali" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblVorodeMahsol">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameMahsol" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Tedad" Type="int" Nullable="false" />
+          <Property Name="Hajm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TarikhVorod" Type="date" Nullable="false" />
+          <Property Name="GheymateKharid" Type="int" Nullable="false" />
+        </EntityType>
+        <Function Name="DeleteTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeletetblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="InsertTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TarikhKharid" Type="date" Mode="In" />
+          <Parameter Name="ShomareFaktor" Type="int" Mode="In" />
+          <Parameter Name="RaveshKharid" Type="nvarchar" Mode="In" />
+          <Parameter Name="TarikhTasviye" Type="date" Mode="In" />
+          <Parameter Name="MablagheKoleFaktor" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="InsertTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NameMahsol2" Type="nvarchar" Mode="In" />
+          <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+          <Parameter Name="GheymateForosh" Type="bigint" Mode="In" />
+          <Parameter Name="TarikhSabteSefaresh" Type="date" Mode="In" />
+          <Parameter Name="NameKharidar" Type="nvarchar" Mode="In" />
+          <Parameter Name="Tel" Type="bigint" Mode="In" />
+          <Parameter Name="AddressErsali" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="InsertTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NameMahsol" Type="nvarchar" Mode="In" />
+          <Parameter Name="Tedad" Type="int" Mode="In" />
+          <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+          <Parameter Name="TarikhVorod" Type="date" Mode="In" />
+          <Parameter Name="GheymateKharid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ResetIdTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ResetIdTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ResetIdTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="UpdateTblSabteFaktoreJadid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TarikhKharid" Type="date" Mode="In" />
+          <Parameter Name="ShomareFaktor" Type="int" Mode="In" />
+          <Parameter Name="RaveshKharid" Type="nvarchar" Mode="In" />
+          <Parameter Name="TarikhTasviye" Type="date" Mode="In" />
+          <Parameter Name="MablagheKoleFaktor" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="UpdateTblSabteSefaresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="NameMahsol2" Type="nvarchar" Mode="In" />
+          <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+          <Parameter Name="GheymateForosh" Type="bigint" Mode="In" />
+          <Parameter Name="TarikhSabteSefaresh" Type="date" Mode="In" />
+          <Parameter Name="NameKharidar" Type="nvarchar" Mode="In" />
+          <Parameter Name="Tel" Type="bigint" Mode="In" />
+          <Parameter Name="AddressErsali" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="UpdateTblVorodeMahsol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="NameMahsol" Type="nvarchar" Mode="In" />
+          <Parameter Name="Tedad" Type="int" Mode="In" />
+          <Parameter Name="Hajm" Type="nvarchar" Mode="In" />
+          <Parameter Name="TarikhVorod" Type="date" Mode="In" />
+          <Parameter Name="GheymateKharid" Type="money" Mode="In" />
+        </Function>
+        <EntityContainer Name="CologneDBModelStoreContainer">
+          <EntitySet Name="tblSabteFaktoreJadid" EntityType="Self.tblSabteFaktoreJadid" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblSabteSefaresh" EntityType="Self.tblSabteSefaresh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblVorodeMahsol" EntityType="Self.tblVorodeMahsol" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CologneDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblSabteFaktoreJadid">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TarikhKharid" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ShomareFaktor" Type="Int32" Nullable="false" />
+          <Property Name="RaveshKharid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TarikhTasviye" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MablagheKoleFaktor" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblSabteSefaresh">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameMahsol2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Hajm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GheymateForosh" Type="Int64" Nullable="false" />
+          <Property Name="TarikhSabteSefaresh" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="NameKharidar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tel" Type="Int64" Nullable="false" />
+          <Property Name="AddressErsali" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblVorodeMahsol">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameMahsol" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tedad" Type="Int32" Nullable="false" />
+          <Property Name="Hajm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TarikhVorod" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="GheymateKharid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CologneDBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblSabteFaktoreJadid" EntityType="Self.tblSabteFaktoreJadid" />
+          <EntitySet Name="tblSabteSefaresh" EntityType="Self.tblSabteSefaresh" />
+          <EntitySet Name="tblVorodeMahsol" EntityType="Self.tblVorodeMahsol" />
+          <FunctionImport Name="DeleteTblSabteFaktoreJadid">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteTblSabteSefaresh">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeletetblVorodeMahsol">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="InsertTblSabteFaktoreJadid">
+            <Parameter Name="TarikhKharid" Mode="In" Type="DateTime" />
+            <Parameter Name="ShomareFaktor" Mode="In" Type="Int32" />
+            <Parameter Name="RaveshKharid" Mode="In" Type="String" />
+            <Parameter Name="TarikhTasviye" Mode="In" Type="DateTime" />
+            <Parameter Name="MablagheKoleFaktor" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="InsertTblSabteSefaresh">
+            <Parameter Name="NameMahsol2" Mode="In" Type="String" />
+            <Parameter Name="Hajm" Mode="In" Type="String" />
+            <Parameter Name="GheymateForosh" Mode="In" Type="Int64" />
+            <Parameter Name="TarikhSabteSefaresh" Mode="In" Type="DateTime" />
+            <Parameter Name="NameKharidar" Mode="In" Type="String" />
+            <Parameter Name="Tel" Mode="In" Type="Int64" />
+            <Parameter Name="AddressErsali" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="InsertTblVorodeMahsol">
+            <Parameter Name="NameMahsol" Mode="In" Type="String" />
+            <Parameter Name="Tedad" Mode="In" Type="Int32" />
+            <Parameter Name="Hajm" Mode="In" Type="String" />
+            <Parameter Name="TarikhVorod" Mode="In" Type="DateTime" />
+            <Parameter Name="GheymateKharid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ResetIdTblSabteFaktoreJadid" />
+          <FunctionImport Name="ResetIdTblSabteSefaresh" />
+          <FunctionImport Name="ResetIdTblVorodeMahsol" />
+          <FunctionImport Name="UpdateTblSabteFaktoreJadid">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TarikhKharid" Mode="In" Type="DateTime" />
+            <Parameter Name="ShomareFaktor" Mode="In" Type="Int32" />
+            <Parameter Name="RaveshKharid" Mode="In" Type="String" />
+            <Parameter Name="TarikhTasviye" Mode="In" Type="DateTime" />
+            <Parameter Name="MablagheKoleFaktor" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateTblSabteSefaresh">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="NameMahsol2" Mode="In" Type="String" />
+            <Parameter Name="Hajm" Mode="In" Type="String" />
+            <Parameter Name="GheymateForosh" Mode="In" Type="Int64" />
+            <Parameter Name="TarikhSabteSefaresh" Mode="In" Type="DateTime" />
+            <Parameter Name="NameKharidar" Mode="In" Type="String" />
+            <Parameter Name="Tel" Mode="In" Type="Int64" />
+            <Parameter Name="AddressErsali" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateTblVorodeMahsol">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="NameMahsol" Mode="In" Type="String" />
+            <Parameter Name="Tedad" Mode="In" Type="Int32" />
+            <Parameter Name="Hajm" Mode="In" Type="String" />
+            <Parameter Name="TarikhVorod" Mode="In" Type="DateTime" />
+            <Parameter Name="GheymateKharid" Mode="In" Type="Decimal" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CologneDBModelStoreContainer" CdmEntityContainer="CologneDBEntities1">
+          <EntitySetMapping Name="tblSabteFaktoreJadid">
+            <EntityTypeMapping TypeName="CologneDBModel.tblSabteFaktoreJadid">
+              <MappingFragment StoreEntitySet="tblSabteFaktoreJadid">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TarikhKharid" ColumnName="TarikhKharid" />
+                <ScalarProperty Name="ShomareFaktor" ColumnName="ShomareFaktor" />
+                <ScalarProperty Name="RaveshKharid" ColumnName="RaveshKharid" />
+                <ScalarProperty Name="TarikhTasviye" ColumnName="TarikhTasviye" />
+                <ScalarProperty Name="MablagheKoleFaktor" ColumnName="MablagheKoleFaktor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSabteSefaresh">
+            <EntityTypeMapping TypeName="CologneDBModel.tblSabteSefaresh">
+              <MappingFragment StoreEntitySet="tblSabteSefaresh">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameMahsol2" ColumnName="NameMahsol2" />
+                <ScalarProperty Name="Hajm" ColumnName="Hajm" />
+                <ScalarProperty Name="GheymateForosh" ColumnName="GheymateForosh" />
+                <ScalarProperty Name="TarikhSabteSefaresh" ColumnName="TarikhSabteSefaresh" />
+                <ScalarProperty Name="NameKharidar" ColumnName="NameKharidar" />
+                <ScalarProperty Name="Tel" ColumnName="Tel" />
+                <ScalarProperty Name="AddressErsali" ColumnName="AddressErsali" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblVorodeMahsol">
+            <EntityTypeMapping TypeName="CologneDBModel.tblVorodeMahsol">
+              <MappingFragment StoreEntitySet="tblVorodeMahsol">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameMahsol" ColumnName="NameMahsol" />
+                <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+                <ScalarProperty Name="Hajm" ColumnName="Hajm" />
+                <ScalarProperty Name="TarikhVorod" ColumnName="TarikhVorod" />
+                <ScalarProperty Name="GheymateKharid" ColumnName="GheymateKharid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="DeleteTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.DeleteTblSabteFaktoreJadid" />
+          <FunctionImportMapping FunctionImportName="DeleteTblSabteSefaresh" FunctionName="CologneDBModel.Store.DeleteTblSabteSefaresh" />
+          <FunctionImportMapping FunctionImportName="DeletetblVorodeMahsol" FunctionName="CologneDBModel.Store.DeletetblVorodeMahsol" />
+          <FunctionImportMapping FunctionImportName="InsertTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.InsertTblSabteFaktoreJadid" />
+          <FunctionImportMapping FunctionImportName="InsertTblSabteSefaresh" FunctionName="CologneDBModel.Store.InsertTblSabteSefaresh" />
+          <FunctionImportMapping FunctionImportName="InsertTblVorodeMahsol" FunctionName="CologneDBModel.Store.InsertTblVorodeMahsol" />
+          <FunctionImportMapping FunctionImportName="ResetIdTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.ResetIdTblSabteFaktoreJadid" />
+          <FunctionImportMapping FunctionImportName="ResetIdTblSabteSefaresh" FunctionName="CologneDBModel.Store.ResetIdTblSabteSefaresh" />
+          <FunctionImportMapping FunctionImportName="ResetIdTblVorodeMahsol" FunctionName="CologneDBModel.Store.ResetIdTblVorodeMahsol" />
+          <FunctionImportMapping FunctionImportName="UpdateTblSabteFaktoreJadid" FunctionName="CologneDBModel.Store.UpdateTblSabteFaktoreJadid" />
+          <FunctionImportMapping FunctionImportName="UpdateTblSabteSefaresh" FunctionName="CologneDBModel.Store.UpdateTblSabteSefaresh" />
+          <FunctionImportMapping FunctionImportName="UpdateTblVorodeMahsol" FunctionName="CologneDBModel.Store.UpdateTblVorodeMahsol" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
